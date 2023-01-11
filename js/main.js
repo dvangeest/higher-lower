@@ -157,7 +157,7 @@ async function rollDice(id) {
 
     //A function to create a dice animation by delaying the next routine by .2 seconds
     async function diceAnimation() {
-        document.querySelector(`.diceImage${id}`).setAttribute("src", `/img/dice${Math.floor(Math.random() * 6) + 1}.png`);
+        document.querySelector(`.diceImage${id}`).setAttribute("src", `../img/dice${Math.floor(Math.random() * 6) + 1}.png`);
 
         await wait(.2);
 
@@ -179,7 +179,7 @@ async function rollDice(id) {
         turnTextLabel.innerHTML = 'Turn: Computer'
     }
 
-    document.querySelector(`.diceImage${id}`).setAttribute('src', `/img/dice${sessionData[`num${id}`]}.png`);
+    document.querySelector(`.diceImage${id}`).setAttribute('src', `../img/dice${sessionData[`num${id}`]}.png`);
 
     return new Promise(function (resolve) {
         resolve();
