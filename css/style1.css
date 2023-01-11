@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(-45deg, rgb(94, 94, 94), rgb(68, 68, 68), rgb(36, 36, 36), rgb(46, 39, 39));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 70vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.title {
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.wrapper {
+    margin: auto;
+    width: 50%;
+    margin-top: 220px;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    color: bisque;
+}
+
+a:hover {
+    text-decoration: underline;
+}

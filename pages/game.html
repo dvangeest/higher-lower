@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/gamestyle.css">
+    <link rel="stylesheet" href="/css/style1.css">
+    <title>Hoger Lager</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title">
+            Higher Lower!
+        </h1>
+
+        <div class="diceContainer">
+            <h3 class="result">Result:</h3>
+
+            <img class="diceImage1" src="/img/dice1.png">
+            <img class="diceImage2" src="/img/dice1.png">
+            
+            <br>
+
+            <button type="button" class="rollbutton1">
+                <p class="playerDiceText">Player Throw</p>
+            </button>
+
+            <button type="button" class="rollbutton2">
+                <p class="computerDiceText">Computer Throw</p>
+            </button>
+
+            <h3 class="turn">Turn: Computer</h3>
+
+            <input type="radio" class="higherRadio" name="higherLower" value="higher">
+            <label for="higherRadio">Higher</label>
+            <input type="radio" class="lowerRadio" name="higherLower" value="lower">
+            <label for="lowerRadio">Lower</label>
+            <input type="radio" class="drawRadio" name="higherLower" value="draw">
+            <label for="lowerRadio">Draw (quadruple the reward)</label>
+
+            <br>
+            <br>
+
+            <label for="betting">Credit: <span class="credits">0</span></label>
+            <br>
+            <input type="number" class="bettingAmount" name="betting" placeholder="place bet" min="1" max="50">
+
+            <h4>
+                Player Score: <span class="scoreText1">0</span> | Computer Score: <span class="scoreText2">0</span>
+            </h4>
+        </div>
+
+        <script type="text/javascript" src="/js/main.js"></script>
+</body>
+
+</html>
